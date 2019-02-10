@@ -20,7 +20,7 @@ Python 测试文件
 # 参数列表
 parser = argparse.ArgumentParser(description='这个程序的简介')
 parser.add_argument('-v', '--version', action='store_true', help='显示版本并退出')
-parser.add_argument('--desc', action='store_true', help='显示描述并退出')
+parser.add_argument('-d', '--desc', action='store_true', help='显示描述并退出')
 args = parser.parse_args()
 
 # 日志记录
