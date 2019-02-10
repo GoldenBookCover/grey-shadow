@@ -2,10 +2,9 @@
 # Date - 2018-12-08
 # Author - CY
 # Function - install python3.7.2 
-# vim python3_install.sh && bash python3_install.sh
 ###########################################
 
-logfile="/home/admin_tools/$(basename ${0}).log"
+logfile="/home/$(basename ${0}).log"
 version='3.7.2'
 # 用来检验是否已安装
 install_path='/usr/local/lib/python3.7'
@@ -52,12 +51,12 @@ function python3_install {
 }
 
 function startup {
-echo "Loading...3..."
-sleep 1
-echo "Loading...2..."
-sleep 1
-echo "Loading...1..."
-sleep 1
+	echo "Loading...3..."
+	sleep 1
+	echo "Loading...2..."
+	sleep 1
+	echo "Loading...1..."
+	sleep 1
 }
 
 # Main function here.
