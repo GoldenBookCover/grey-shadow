@@ -23,6 +23,16 @@ parser.add_argument('-v', '--version', action='store_true', help='显示版本�
 parser.add_argument('-d', '--desc', action='store_true', help='显示描述并退出')
 args = parser.parse_args()
 
+
+# 显示版本并退出
+if args.version :
+	print('Version: ', version)
+	exit()
+		
+if args.desc :
+	print(description,)
+	exit()
+
 # 日志记录
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
@@ -43,16 +53,6 @@ logger.addHandler(stream_handler)
 ###########################################
 
 def main() :
-
-	# 显示版本并退出
-	if args.version :
-		print('Version: ', version)
-		exit()
-		
-	if args.desc :
-		print(description,)
-		exit()
-
 	os.mkdir('test_py_dir')
     # logger.info('这条日志仅被记录到文件')
 	# logger.warning('这条日志被记录到文件并输出至屏幕')
