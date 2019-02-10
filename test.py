@@ -57,9 +57,9 @@ def main() :
 	if args.version :
 		print('Version: ', version)
 		exit()
-    if args.desc :
-        print(description)
-        exit()
+	if args.desc :
+		print(description)
+		exit()
 
 	os.mkdir('test_py_dir')
     # logger.info('这条日志仅被记录到文件')
