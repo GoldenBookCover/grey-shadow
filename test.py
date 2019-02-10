@@ -43,22 +43,14 @@ logger.addHandler(stream_handler)
 ###########################################
 
 def main() :
-	
-	# 创建日志目录
-	log_dir = os.path.dirname(logfile)
-	if not os.path.isdir(log_dir) :
-		try :
-			os.makedirs(log_dir)
-		except :
-			print('无法创建日志目录')
-			exit()
 
 	# 显示版本并退出
 	if args.version :
 		print('Version: ', version)
 		exit()
+		
 	if args.desc :
-		print(description)
+		print(description,)
 		exit()
 
 	os.mkdir('test_py_dir')
