@@ -5,7 +5,7 @@
 ###########################################
 
 logfile="/home/$(basename ${0}).log"
-version='3.7.2'
+version='3.7.3'
 # 用来检验是否已安装
 install_path='/usr/local/lib/python3.7'
 
